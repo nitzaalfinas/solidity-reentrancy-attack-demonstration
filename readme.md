@@ -1,5 +1,7 @@
 # SmartContract reentrancy attack demonstration
 
+ This is demonstration about reentrancy attack and how to prevent it.
+
 ## How to run
 1. Clone
 2. Install dependencies
