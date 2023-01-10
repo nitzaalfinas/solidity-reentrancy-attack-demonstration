@@ -21,4 +21,7 @@ You can find discussion about this title here https://ethereum.stackexchange.com
 
 I have a conclution; `transfer` method still safe
 ```
+payable(msg.sender).sendValue(depositedAmount);       // not safe
+payable(msg.sender).transfer(depositedAmount);        // SAFE
+payable(msg.sender).call{value: depositedAmount}(''); // not safe
 ```
